@@ -92,7 +92,7 @@ data-aos-delay="700">
 <br><br><br><br><br><br><br><br><br>
 <footer>
     <h2>Copyright</h2>
-    ©️ 2024 Brandon Mohammed.All rights reserved   <br>
+    ©️ 202 Brandon Mohammed.All rights reserved   <br>
     website design inspired by <a href="https://xge.dev/">xge.dev</a> <br> 
    <a href="https://atomiks.github.io/tippyjs/">Tippy</a>, <a href="https://michalsnik.github.io/aos/">AOS</a>, <a href="https://lusaxweb.github.io/Kursor/">kursor.js</a>, <a href="">typed.js</a> and <a href="">lenis</a> were used to make this website possible.
     <div class="socials"> <a href="https://www.instagram.com/iiiibran/"> <img class="imagehover insta" src="./instaglogo.webp" alt="" width="40"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://wa.me/18683818552"> <img class="imagehover whatsapp" src="./whatsapp-64.png" alt=""  width="40"> </a> </div>
@@ -206,11 +206,11 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 // checks if we are on mobile and goes to the mobile.html page
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+const isMobile = navigator.userAgentData.mobile; 
 
-if (isMobile) {
+if (isMobile == true) {
   window.location = 'mobile.html';
-} 
+}
 
 </script>
 

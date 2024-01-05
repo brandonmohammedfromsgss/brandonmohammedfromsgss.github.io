@@ -99,6 +99,12 @@ if (isMobile == true) {
   alert("You seem to be on a mobile phone, visit the desktop for the intended website!")
 }
 
+var mobile = navigator.userAgent;
+
+if (mobile == "/iPhone|iPad|iPod|Android/") {
+    alert("")
+}
+
 var typed = new Typed('#typed', {
         // ,Form 4 SanSec student,Intrested in IT,A pro dumbass
     smartBackspace: true,
