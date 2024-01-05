@@ -361,8 +361,7 @@ footer {
 
 
 
-/** for phones **/
-
+    /** for phones **/
 @media only screen and (max-width: 600px) {
     .gall {
         display: grid;
@@ -373,22 +372,12 @@ footer {
         background-color: transparent;
     }
 
-    .div1,
-    .div2,
-    .div3,
-    .div4,
-    .div5,
-    .div6 {
+    .div1,.div2,.div3,.div4,.div5,.div6 {
         grid-area: auto;
         filter: blur(0px) grayscale(0%);
     }
 
-    .div1:hover,
-    .div2:hover,
-    .div3:hover,
-    .div4:hover,
-    .div5,
-    .div6 {
+    .div1:hover,.div2:hover,.div3:hover,.div4:hover,.div5:hover,.div6:hover {
         grid-area: auto;
         filter: blur(0px);
     }
