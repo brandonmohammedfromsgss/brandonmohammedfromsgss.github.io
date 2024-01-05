@@ -366,7 +366,7 @@ footer {
     .gall {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 15px;
         background-color: transparent;
@@ -395,7 +395,7 @@ footer {
     .maths {
         grid-area: auto;
         background-color: rgb(255, 0, 0);
-        padding: 60px;
+        padding: 40px;
         border: 8.8px solid rgb(185, 28, 28);
         border-style: inset;
         transition: all ease-in-out 1s;
@@ -404,7 +404,7 @@ footer {
     .eng {
         grid-area: auto;
         background-color: yellow;
-        padding: 60px;
+        padding: 40px;
         border: 8.8px solid rgb(141, 141, 9);
         border-style: inset;
         transition: all ease-in-out 1s;
@@ -413,7 +413,7 @@ footer {
     .geo {
         grid-area: auto;
         background-color: yellowgreen;
-        padding: 60px;
+        padding: 40px;
         border: 8.8px solid rgb(122, 173, 20);
         border-style: inset;
         transition: all ease-in-out 1s;
@@ -421,7 +421,7 @@ footer {
 
     .info {
         grid-area: auto;
-        padding: 60px;
+        padding: 40px;
         background-color: rgb(77, 77, 218);
         border: 8.8px solid rgb(122, 122, 247);
         border-style: inset;
@@ -430,7 +430,7 @@ footer {
 
     .IS {
         grid-area: auto;
-        padding: 60px;
+        padding: 40px;
         background-color: rgb(12, 102, 12);
         border: 8.8px solid rgb(3, 48, 4);
         border-style: inset;
@@ -439,7 +439,7 @@ footer {
 
     .ss {
         grid-area: auto;
-        padding: 60px;
+        padding: 40px;
         background-color: orangered;
         border: 8.8px solid rgb(255, 91, 32);
         border-style: inset;
@@ -448,7 +448,7 @@ footer {
 
     .pob {
         grid-area: auto;
-        padding: 60px;
+        padding: 40px;
         background-color: rgb(235, 103, 235);
         border: 8.8px solid rgb(207, 74, 207);
         border-style: inset;
@@ -459,7 +459,7 @@ footer {
     .maths:hover {
         grid-area: auto;
         background-color: rgb(255, 0, 0);
-        padding: 60px;
+        padding: 40px;
         border: 8.8px solid rgb(185, 28, 28);
         border-style: inset;
         transition: all ease-in-out 1s;
@@ -468,7 +468,7 @@ footer {
     .eng:hover {
         grid-area: auto;
         background-color: yellow;
-        padding: 60px;
+        padding: 40px;
         border: 8.8px solid rgb(141, 141, 9);
         border-style: inset;
         transition: all ease-in-out 1s;
@@ -477,7 +477,7 @@ footer {
     .geo:hover {
         grid-area: auto;
         background-color: yellowgreen;
-        padding: 60px;
+        padding: 40px;
         border: 8.8px solid rgb(122, 173, 20);
         border-style: inset;
         transition: all ease-in-out 1s;
@@ -485,7 +485,7 @@ footer {
 
     .info:hover {
         grid-area: auto;
-        padding: 60px;
+        padding: 40px;
         background-color: rgb(77, 77, 218);
         border: 8.8px solid rgb(122, 122, 247);
         border-style: inset;
@@ -494,7 +494,7 @@ footer {
 
     .IS:hover {
         grid-area: auto;
-        padding: 60px;
+        padding: 40px;
         background-color: rgb(12, 102, 12);
         border: 8.8px solid rgb(3, 48, 4);
         border-style: inset;
@@ -503,7 +503,7 @@ footer {
 
     .ss:hover {
         grid-area: auto;
-        padding: 60px;
+        padding: 40px;
         background-color: orangered;
         border: 8.8px solid rgb(255, 91, 32);
         border-style: inset;
@@ -512,7 +512,7 @@ footer {
 
     .pob:hover {
         grid-area: auto;
-        padding: 60px;
+        padding: 40px;
         background-color: rgb(235, 103, 235);
         border: 8.8px solid rgb(207, 74, 207);
         border-style: inset;
