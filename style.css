@@ -343,179 +343,34 @@ footer {
     transition: all ease-in-out 1s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /** for phones **/
 @media only screen and (max-width: 600px) {
-    .gall {
+    .gall,.parent {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 15px;
         background-color: transparent;
     }
 
-    .div1,.div2,.div3,.div4,.div5,.div6 {
+    .div1, .div2, .div3, .div4, .div5, .div6, .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover {
         grid-area: auto;
         filter: blur(0px) grayscale(0%);
     }
 
-    .div1:hover,.div2:hover,.div3:hover,.div4:hover,.div5:hover,.div6:hover {
-        grid-area: auto;
-        filter: blur(0px);
-    }
-
     .parent {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 5px;
-        grid-row-gap: 30px;
-        font-family: cursive;
-        font-size: 24px;
+        font-size: 18px; 
     }
 
-    .maths {
+    .maths, .eng, .geo, .info, .IS, .ss, .pob, .maths:hover, .eng:hover, .geo:hover, .info:hover, .IS:hover, .ss:hover, .pob:hover {
         grid-area: auto;
-        background-color: rgb(255, 0, 0);
-        padding: 40px;
-        border: 8.8px solid rgb(185, 28, 28);
-        border-style: inset;
-        transition: all ease-in-out 1s;
     }
 
-    .eng {
-        grid-area: auto;
-        background-color: yellow;
-        padding: 40px;
-        border: 8.8px solid rgb(141, 141, 9);
-        border-style: inset;
-        transition: all ease-in-out 1s;
+    .brandonbig {
+        font-size: 30px;
     }
 
-    .geo {
-        grid-area: auto;
-        background-color: yellowgreen;
-        padding: 40px;
-        border: 8.8px solid rgb(122, 173, 20);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-    .info {
-        grid-area: auto;
-        padding: 40px;
-        background-color: rgb(77, 77, 218);
-        border: 8.8px solid rgb(122, 122, 247);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-    .IS {
-        grid-area: auto;
-        padding: 40px;
-        background-color: rgb(12, 102, 12);
-        border: 8.8px solid rgb(3, 48, 4);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-    .ss {
-        grid-area: auto;
-        padding: 40px;
-        background-color: orangered;
-        border: 8.8px solid rgb(255, 91, 32);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-    .pob {
-        grid-area: auto;
-        padding: 40px;
-        background-color: rgb(235, 103, 235);
-        border: 8.8px solid rgb(207, 74, 207);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-
-    .maths:hover {
-        grid-area: auto;
-        background-color: rgb(255, 0, 0);
-        padding: 40px;
-        border: 8.8px solid rgb(185, 28, 28);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-    .eng:hover {
-        grid-area: auto;
-        background-color: yellow;
-        padding: 40px;
-        border: 8.8px solid rgb(141, 141, 9);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-    .geo:hover {
-        grid-area: auto;
-        background-color: yellowgreen;
-        padding: 40px;
-        border: 8.8px solid rgb(122, 173, 20);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-    .info:hover {
-        grid-area: auto;
-        padding: 40px;
-        background-color: rgb(77, 77, 218);
-        border: 8.8px solid rgb(122, 122, 247);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-    .IS:hover {
-        grid-area: auto;
-        padding: 40px;
-        background-color: rgb(12, 102, 12);
-        border: 8.8px solid rgb(3, 48, 4);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-    .ss:hover {
-        grid-area: auto;
-        padding: 40px;
-        background-color: orangered;
-        border: 8.8px solid rgb(255, 91, 32);
-        border-style: inset;
-        transition: all ease-in-out 1s;
-    }
-
-    .pob:hover {
-        grid-area: auto;
-        padding: 40px;
-        background-color: rgb(235, 103, 235);
-        border: 8.8px solid rgb(207, 74, 207);
-        border-style: inset;
-        transition: all ease-in-out 1s;
+    #typed {
+        font-size: 20px;
     }
 }
