@@ -9,7 +9,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
-    <script src="./javascript/carousell.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,26 +67,26 @@ data-aos-easing="linear"
 data-aos-duration="6500"
 data-aos-delay="700">
 <h2>My subject choices</h2>
-<div class="parent">
+
+<div class="gallcontainer">
   <div class="maths">Maths </div>
   <div class="eng">English </div>
   <div class="geo">Geography </div>
   <div class="info"> I.T </div>
   <div class="IS">Int. Sci </div>
   <div class="ss">Social Studies </div>
-  <div class="pob">P.O.B</div>
-  </div>
+  <div class="pob">P.O.B</div> 
+</div>
 </div>
 
-<div class="gall">
-  <div class="div1"> <img src="./pictures/youngerme.webp" alt="" width="400"> </div>
-  <div class="div2"> <img src="./pictures/sittingdown.webp" alt="" width="400" > </div>
-  <div class="div3"> <img src="./pictures/sade.webp" alt="" width="400"> </div>
-  <div class="div4"> <img src="./pictures/resortchair.webp" alt="" width="400"> </div>
-  <div class="div5"> <img src="./pictures/lyedown.webp" alt="" width="400"> </div> 
-  <div class="div6"> <img src="./pictures/instapfp.webp" alt="" width="400"> </div>
-  </div>
-  
+<br><br><br><br><br><br>
+
+<img class="blur" src="./pictures/instapfp.webp" alt="" width="400" height="400">
+<img class="blur" src="./pictures/lyedown.webp" alt="" width="400" height="400">
+<img class="blur" src="./pictures/resortchair.webp" alt="" width="400" height="400">
+<img class="blur" src="./pictures/sade.webp" alt="" width="400" height="400">
+<img class="blur" src="./pictures/sittingdown.webp" alt="" width="400" height="400">
+<img class="blur" src="pictures/youngerme.webp" alt="" width="400" height="400">
 
 
 <br><br><br><br><br><br><br><br><br>
@@ -207,7 +206,12 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 
+// checks if we are one mobile and goes to the mobile page
+const isMobile = navigator.userAgentData.mobile; 
 
+if (isMobile == true) {
+  window.location = 'mobile.html';
+}
 
 </script>
 
