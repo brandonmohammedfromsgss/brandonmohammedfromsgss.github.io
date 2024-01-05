@@ -4,7 +4,6 @@
   <!-- What libaries is used to make the website look like this  -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grids.css">
-    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor@0.1.6/dist/kursor.css">
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -79,7 +78,6 @@ data-aos-delay="700">
   <div class="pob">P.O.B</div>
   </div>
 </div>
-<br><br>
 
 <div class="gall">
   <div class="div1"> <img src="./pictures/youngerme.webp" alt="" width="400"> </div>
@@ -110,14 +108,6 @@ data-aos-delay="700">
 <script>
      AOS.init();
      // custom cursor
-
-     const isMobile = navigator.userAgentData.mobile; 
-
-     if (isMobile == true) {
-      alert("This website is intended to be veiwed on a computer. It looks better; on mobile it is a worse browsing experience")
-     } else{
-      return;
-     }
 
     new kursor({
         type: 1 ,
