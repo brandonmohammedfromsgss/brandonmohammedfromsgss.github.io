@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto&family=Roboto+Condensed&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto&family=Roboto+Condensed&family=Patrick+Hand&family=Lilita+One&display=swap');
 
 body {
     text-align: center;
@@ -7,7 +7,10 @@ body {
     margin: 0;
     padding: 0;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+}
 h2 {
     font-family: 'Lilita One', sans-serif;
 }
@@ -133,11 +136,32 @@ footer {
 ::-webkit-scrollbar-track {
     background-color: rgb(168, 164, 164);
 }
-
-
+.abovethefold {
+    background-color: #fdf7f7; /** f8efef **/
+    margin: 0;
+    padding: 0;
+}
+.grey {
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+}
+.moregrayer {
+    z-index: -1;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+.gallerybackground {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+.space {
+    padding: 8px;
+}
 .blur {
-    filter: blur(10px);
-    transition: all ease-in-out 25s;
+    filter: blur(3px);
+    transition: all ease-in-out 40s;
 }
 .blur:hover {
     filter: blur(0);
@@ -155,6 +179,7 @@ footer {
     margin: 18px;
     text-align: center;
     font-size: 30px;
+    font-family: 'Patrick Hand', cursive;
   }
 
 .maths {
@@ -168,7 +193,7 @@ footer {
 .eng {
     background-color: yellow;
     padding: 60px;
-    border: 8.8px solid rgb(141, 141, 9);
+    border: 8.8px solid rgb(240, 240, 13);
     border-style: inset;
     transition: all ease-in-out 1s;
 }
@@ -191,7 +216,7 @@ footer {
 
 .IS {
     padding: 60px;
-    background-color: rgb(12, 102, 12);
+    background-color: rgb(21, 187, 21);
     border: 8.8px solid rgb(3, 48, 4);
     border-style: inset;
     transition: all ease-in-out 1s;
@@ -223,7 +248,7 @@ footer {
 
 .eng:hover {
     padding: 60px;
-    background-color: rgb(138, 138, 10);
+    background-color: rgb(189, 189, 9);
     transition: all ease-in-out 1s;
 }
 
@@ -241,7 +266,7 @@ footer {
 
 .IS:hover {
     padding: 60px;
-    background-color: rgb(12, 104, 12);
+    background-color: rgb(11, 148, 11);
     transition: all ease-in-out 1s;
 }
 

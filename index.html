@@ -17,7 +17,7 @@
 <body>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-
+<section class="abovethefold">
 <div data-aos="fade-left"
 data-aos-easing="linear"
 data-aos-duration="9000"
@@ -33,7 +33,9 @@ data-aos-offset="500">
 
 
 </div>
+</section>
 
+<section class="grey">
 
     <div class="infosummary">
 </div>
@@ -60,9 +62,12 @@ data-aos-delay="600">
     <a href="https://www.instagram.com/iiiibran/?hl=en"> <img class="imagehover insta" src="./instaglogo.webp" alt="" width="40"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:darknessofthe.bm.sg3@gmail.com"><img class="imagehover email" src="./email.png" alt="" width="40"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://wa.me/18683818552">  <img class="imagehover whatsapp" src="./whatsapp.webp" alt="" width="40"> </a>
 </div>
 </div>
+</section>
 
 
 <br><br><br><br><br><br><br><br>
+
+<section class="moregrayer">
 <div data-aos="zoom-in"
 data-aos-easing="linear"
 data-aos-duration="6500"
@@ -79,17 +84,17 @@ data-aos-delay="700">
   <div class="pob">P.O.B</div> 
 </div>
 </div>
-
+</section>
+<section class="gallerybackground">
 <br><br><br><br><br><br>
-
-<img class="blur" src="./pictures/instapfp.webp" alt="" width="400" height="400">
-<img class="blur" src="./pictures/lyedown.webp" alt="" width="400" height="400">
-<img class="blur" src="./pictures/resortchair.webp" alt="" width="400" height="400">
-<img class="blur" src="./pictures/sade.webp" alt="" width="400" height="400">
-<img class="blur" src="./pictures/sittingdown.webp" alt="" width="400" height="400">
-<img class="blur" src="pictures/youngerme.webp" alt="" width="400" height="400">
-
-
+<h2>Gallery</h2>
+<img class="blur space" src="./pictures/instapfp.webp" alt="" width="400" height="400">
+<img class="blur space" src="./pictures/lyedown.webp" alt="" width="400" height="400">
+<img class="blur space" src="./pictures/resortchair.webp" alt="" width="400" height="400">
+<img class="blur space" src="./pictures/sade.webp" alt="" width="400" height="400">
+<img class="blur space" src="./pictures/sittingdown.webp" alt="" width="400" height="400">
+<img class="blur space" src="pictures/youngerme.webp" alt="" width="400" height="400">
+</section>
 <h3>Portfolio</h3>
 
 
@@ -209,10 +214,9 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-// checks if we are on mobile and goes to the mobile.html page
-const isMobile = navigator.userAgentData.mobile; 
-
-if (isMobile == true) {
+// checks if we are on mobile or tablet and goes to the mobile.html page
+const IsPortableDevive = /iPhone|iPad|iPod|Android|Kindle/i.test(navigator.userAgent);
+if (isMobile) {
   window.location = 'mobile.html';
 }
 
