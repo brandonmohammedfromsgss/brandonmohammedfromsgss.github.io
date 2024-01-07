@@ -3,19 +3,34 @@
 body {
     text-align: center;
     text-wrap: balance;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(240, 235, 235);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.4;
+    background-blend-mode: normal;
+}
+.abovethefold {
+    background-color: #fdf7f7; /** f8efef **/
+}
+.grey {
+    background-color: #EEEEEE;
+}
+.moregrayer {
+    z-index: -1;
+    background-color: #f2f2f2;
+}
+.gallerybackground {
+    background-color: rgb(19, 18, 18);
+    color: wheat;
 }
 h3 {
     font-family: 'Anonymous Pro', monospace;
 }
 
-#typed {
-    display: inline;
+h3 {
+    font-size: 16px;
 }
-
 h2 {
     font-family: 'Lilita One', sans-serif;
 }
@@ -41,15 +56,17 @@ h2 {
     z-index: 1;
 }
 
-#typed {
-    font-size: 24px;
+#typed,#abtme {
+    display: inline-block;
 }
-
+.typedtext {
+    font-size: 26px;
+}
 footer {
     background-color: black;
     color: white;
 }
 
 li {
-    font-size: 20px;
+    font-size: 18px;
 }
