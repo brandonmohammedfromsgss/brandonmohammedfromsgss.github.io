@@ -10,7 +10,7 @@
     <title>Brandon Mohammed | I.T | SGSS</title>
 </head>
 <body>
-
+<section class="abovethefold">
     <div class="brandonbig">
     <h2>Brandon Mohammed</h2>
 </div>
@@ -23,17 +23,15 @@ data-aos-delay="700">
     <a href="https://www.instagram.com/iiiibran/?hl=en"> <img class="imagehover insta" src="./instaglogo.webp" alt="" width="40"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:darknessofthe.bm.sg3@gmail.com"><img class="imagehover email" src="./email.png" alt="" width="40"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://wa.me/18683818552">  <img class="imagehover whatsapp" src="./whatsapp.webp" alt="" width="40"> </a>
 </div>
 </div>
+
 <br>
 
-<div data-aos="fade-left"
-data-aos-easing="linear"
-data-aos-duration="6500"
-data-aos-delay="700">
-<span id="typed"></span> <br>
-</div>
+<span id="abtme"></span>
 
+
+</section>
+<section class="moregrayer">
 <h2>About me</h2>
-
 <div data-aos="zoom-in"
 data-aos-easing="linear"
 data-aos-duration="6500"
@@ -54,11 +52,12 @@ data-aos-delay="700">
     I may be slow to pick up on social ques, be slow at learning some stuff or come off as annoying sometimes, but it's
      not really that bad as on the spectrum as I am diganosed as 'mild'. </h3>
 </div>
-
-<div data-aos="zoom-out-left"
+</section>
+<div data-aos="zoom-out"
 data-aos-easing="linear"
 data-aos-duration="8500"
 data-aos-delay="950">
+<section class="grey">
 <h2>Subject choices</h2>
 <ul>
     <li>L1 - Maths</li>
@@ -70,19 +69,24 @@ data-aos-delay="950">
     <li>L7 - P.O.B</li>
 </ul>
 </div>
+</section>
 
 <div data-aos="flip-right"
 data-aos-easing="linear"
 data-aos-duration="8500"
 data-aos-delay="1400">
+<section class="gallerybackground">
 <h2>Some pictures of me</h2>
+<br>
 <img src="./pictures/instapfp.webp" alt="" width="300" height="300">
 <img src="./pictures/lyedown.webp" alt="" width="300" height="300">
 <img src="./pictures/resortchair.webp" alt="" width="300" height="300">
 <img src="./pictures/sade.webp" alt="" width="300" height="300">
 <img src="./pictures/sittingdown.webp" alt="" width="300" height="300">
 <img src="pictures/youngerme.webp" alt="" width="300" height="300">
+<br><br>
 </div>
+</section>
 <br><br><br><br>
 
 <footer>
@@ -93,27 +97,16 @@ data-aos-delay="1400">
 <script>
     AOS.init();
     // checks and tells the user that this is mobile site
-    const isMobile = navigator.userAgentData.mobile; 
+const isMobile = navigator.userAgentData.mobile; 
 
 if (isMobile == true) {
   alert("You seem to be on a mobile phone, visit the desktop for the intended website!")
 }
 
-var mobile = navigator.userAgent;
-
-if (mobile == "/iPhone|iPad|iPod|Android/") {
-    alert("")
-}
-
-var typed = new Typed('#typed', {
-        // ,Form 4 SanSec student,Intrested in IT,A pro dumbass
-    smartBackspace: true,
-    strings: ['<h3>I am a 15 year old, IT student from SGSS, currently wanting to major a job in I.T</h3>' ],
+var typed = new Typed('#abtme', {
+    strings: ['<h2 class="typedtext"> A 15 year old, IT student from SGSS, currently wanting to major a job in I.T </h2>' ],
     loop: false,
     typeSpeed: 75,
-    backSpeed: 20,
-    //startDelay: 40,
-    smartBackspace: true
 
   });
 </script>
