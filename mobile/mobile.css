@@ -24,6 +24,7 @@ body {
 }
 
 .grey {
+    padding-top: 130px !important; 
     background-color: #EEEEEE;
     margin: 0;
     padding: 0;
@@ -35,7 +36,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.aboutmebg {
+    background-color: #f0e4e4;
+}
 .gallerybackground {
     background-color: rgb(10, 10, 10);
     color: white;
@@ -91,11 +94,11 @@ footer {
 }
 
 li {
-    font-size: px;
+    font-size: 18px;
 }
 
 /** for Tablets **/
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
     h3 {
         font-size: 29px;
     }
