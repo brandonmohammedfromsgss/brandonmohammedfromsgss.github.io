@@ -17,8 +17,7 @@ body {
 }
 
 .abovethefold {
-    background-color: #fdf7f7;
-    /** f8efef **/
+    background-color: #fdf7f7;/** f8efef **/
     margin: 0;
     padding: 0;
 }
@@ -31,13 +30,15 @@ body {
 }
 
 .moregrayer {
+    padding-top: 80px !important;
     z-index: -1;
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
 }
-.aboutmebg {
-    background-color: #f0e4e4;
+.aboutmebg,.socalmedia {
+    background-color: #f1eaea;
+    padding-bottom: 20px !important;
 }
 .gallerybackground {
     background-color: rgb(10, 10, 10);
@@ -46,7 +47,7 @@ body {
 
 h3 {
     font-family: 'Anonymous Pro', monospace;
-    font-size: 16px;
+    font-size: px;
 }
 
 .thin {
