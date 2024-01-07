@@ -7,10 +7,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
+
 h2 {
     font-family: 'Lilita One', sans-serif;
 }
@@ -136,33 +138,41 @@ footer {
 ::-webkit-scrollbar-track {
     background-color: rgb(168, 164, 164);
 }
+
 .abovethefold {
-    background-color: #fdf7f7; /** f8efef **/
+    background-color: #fdf7f7;
+    /** f8efef **/
     margin: 0;
     padding: 0;
 }
+
 .grey {
     background-color: #EEEEEE;
     margin: 0;
     padding: 0;
 }
+
 .moregrayer {
     z-index: -1;
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
 }
+
 .gallerybackground {
     background-color: rgb(10, 10, 10);
     color: white;
 }
+
 .space {
     padding: 8px;
 }
+
 .blur {
     filter: blur(3px) saturate(80%);
     transition: all ease-in-out 40s;
 }
+
 .blur:hover {
     filter: blur(0) saturate(150%);
     transition: all ease-in-out 0.8s;
@@ -173,14 +183,14 @@ footer {
     flex-wrap: wrap;
 }
 
-.gallcontainer > div {
+.gallcontainer>div {
     text-wrap: balance;
     width: 150px;
     margin: 18px;
     text-align: center;
     font-size: 30px;
     font-family: 'Patrick Hand', cursive;
-  }
+}
 
 .maths {
     background-color: rgb(255, 0, 0);
