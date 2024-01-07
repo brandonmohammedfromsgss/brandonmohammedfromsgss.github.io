@@ -216,7 +216,7 @@ requestAnimationFrame(raf)
 
 // checks if we are on mobile or tablet and goes to the mobile.html page
 const IsPortableDevive = /iPhone|iPad|iPod|Android|Kindle/i.test(navigator.userAgent);
-if (isMobile) {
+if (IsPortableDevive) {
   window.location = 'mobile.html';
 }
 
