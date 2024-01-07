@@ -137,7 +137,7 @@ footer {
 
 .blur {
     filter: blur(10px);
-    transition: all ease-in-out 12s;
+    transition: all ease-in-out 25s;
 }
 .blur:hover {
     filter: blur(0);
