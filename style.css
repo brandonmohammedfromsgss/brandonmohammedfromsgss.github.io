@@ -258,9 +258,3 @@ footer {
     border-style: inset;
     transition: all ease-in-out 1s;
 }
-
-@media (max-width: 768px) {
-    .gallcontainer {
-      flex-direction: column;
-    }
-  }
