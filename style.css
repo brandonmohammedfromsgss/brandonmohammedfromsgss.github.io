@@ -153,6 +153,7 @@ footer {
 }
 
 .moregrayer {
+    padding-top: 180px !important;
     z-index: -1;
     background-color: #f2f2f2;
     margin: 0;
@@ -164,13 +165,9 @@ footer {
     color: white;
 }
 
-.space {
-    padding: 8px;
-}
-
 .blur {
     filter: blur(3px) saturate(80%);
-    transition: all ease-in-out 40s;
+    transition: all ease-in-out 60s;
 }
 
 .blur:hover {
