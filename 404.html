@@ -1,43 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="52; url=/">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="5s; url=/">
 <head>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto&family=Roboto+Condensed&family=Patrick+Hand&family=Lilita+One&display=swap');
+
         body {
-            text-align: center
+            font-family: "Anonymous Pro", monospace;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
         }
-        h1{
-            font-size: 48px;
+
+        h1 {
+            font-size: 70px;
             color: gold;
             text-decoration: underline;
         }
-        h2{
+
+        h2 {
             font-size: 36px;
         }
-        h3{
-            font-size: 18px
+
+        h3 {
+            font-size: 18px;
         }
-        @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto&family=Roboto+Condensed&family=Patrick+Hand&family=Lilita+One&display=swap');
+
+        button {
+            animation-name: blend;
+            animation-timing-function: ease;
+        }
+
+
+        a:active,
+        a:visited {
+            color: white;
+        }
+
+        #home {
+            font-size: 30px;
+        }
+
+        @keyframes blend {
+            0% {
+                background-color: #da3cec;
+            }
+            15% {
+                background-color: #d510eb;
+            }
+            25% {
+                background-color: #b415c6;
+            }
+            50% {
+                background-color: #910ba0;
+            }
+            75% {
+                background-color: #b121c1;
+            }
+            100% {
+               background-color: #d91aee;
+            }
+        }
+
+        .hbtn:hover {
+            background: #da3eeb;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transition: 0.8 ease-in-out;
+        }
+
+        .blend:hover {
+            animation-name: blend;
+            animation-timing-function: ease;
+        }
+        button {
+            padding: 20px 40px;
+            background-color: hotpink;
+            border-style: none;
+            display: inline-block;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 | Link or document not found!</title>
 </head>
+
 <body>
-    <br><br><br><br><br><br><br><br><br>
+    <br>
+    <img src="./error.svg" alt="Ghost error logo by icons8" width="200">
     <h1>404: Page not found!</h1>
+    <h3>Page was unable to be found, ensure it is the correct url </h3>
 
-    <h2>You are being redirected to the home page in 5 seconds <h2>
+        <div class="blend"> <button class="hbtn"> <a id="home" href="/">Get back to home page</a></button> </div>
 
 
-    <h3>That page was unable to found, ensure this is the correct url. 
-        If it is the correct url,then the website might just be down,please wait for it go get back up and online.
-         </h3>
-<br><br><br>
-    <br><br><br><br><br><br>
-    
+
+
+    <br><br><br>
+    <p style="font-size: 14px;">Ghost Icon by <a style="color: black;" href="https://icons8.com/">Icons8</a>
+    </p>
 </body>
+
 </html>
