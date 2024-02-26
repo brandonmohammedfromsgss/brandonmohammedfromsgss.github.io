@@ -1,6 +1,5 @@
 function EmailQuestion() {
-  var mailquestion = prompt("What condition do I have?")
-  mailquestion = mailquestion.toLowerCase()
+  var mailquestion = prompt("What condition do I have?").toLowerCase()
   if (mailquestion === "autism" || mailquestion === "asd") {
     GetEmail()
   } else if (mailquestion === '') {
@@ -11,7 +10,7 @@ function EmailQuestion() {
 }
 
 function PhoneNumber() {
-  var pn = prompt("How old am I currently? ")
+  var pn = prompt("How old am I currently?").toLowerCase()
   if (pn === "15" || pn === "fifteen") {
     window.location = 'https://t.me/BarrM'
   } else if (pn === '') {
@@ -22,7 +21,7 @@ function PhoneNumber() {
 }
 
 function Instagram() {
-  var ista = prompt("What is my favourite subject?")
+  var ista = prompt("What is my favourite subject?").toLowerCase()
   if (ista === "it" || ista === "infotech" || ista == "informationtechnology" || ista == "I.T") {
     window.location = 'https://www.instagram.com/iiiibran/?hl=en'
   }
@@ -34,7 +33,6 @@ function Instagram() {
 function GetEmail() {
   var namebase64 = "YnJhbmRvbjY2cmIx"
   var domainbase64 = "QGdtYWlsLmNvbQ=="
-
   var decriptor = atob(namebase64 + domainbase64)
   alert(decriptor)
 }
@@ -73,10 +71,6 @@ document.addEventListener('click', () => {
     dot.classList.remove("custom-cursor-dot-expand")
   }, 500)
 
-})
-
-document.addEventListener("select", () => {
-  dot.classList.remove("custom-cursor-dot-expand", "")
 })
 
 let alllinks = document.querySelectorAll("a", 'a.link');
