@@ -35,7 +35,7 @@ function GetTele() {
 
   var decriptortelegram = atob(telegramdomain64 + usernametelegram64)
 
-  console.log(decriptortelegram)
+  window.location = (decriptortelegram);
 }
 
 function GetIG() {
