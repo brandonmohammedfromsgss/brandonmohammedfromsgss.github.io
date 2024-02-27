@@ -12,7 +12,7 @@ function EmailQuestion() {
 function PhoneNumber() {
   var pn = prompt("How old am I currently?").toLowerCase()
   if (pn === "15" || pn === "fifteen") {
-    window.location = 'https://t.me/BarrM'
+    GetTele()
   } else if (pn === '') {
     alert("Please answer to gain acess")
   } else {
@@ -23,13 +23,27 @@ function PhoneNumber() {
 function Instagram() {
   var ista = prompt("What is my favourite subject?").toLowerCase()
   if (ista === "it" || ista === "infotech" || ista == "information technology" || ista == "I.T") {
-    window.location = 'https://www.instagram.com/iiiibran/?hl=en'
+    GetIG()
   }
   else {
     alert("Wrong answer! Try again")
   }
 }
+function GetTele() {
+  var telegramdomain64 = "aHR0cHM6Ly90Lm1l"
+  var usernametelegram64 = "L0JhcnJN"
 
+  var decriptortelegram = atob(telegramdomain64 + usernametelegram64)
+
+  console.log(decriptortelegram)
+}
+
+function GetIG() {
+  var igdomainb64 = "aHR0cHM6Ly93d3cuaW5zdGFncmFt"
+  var username64 = "LmNvbS9nZ2JyYW55Lw=="
+  var decriptorig = atob(igdomainb64 + username64)
+  window.location = (decriptorig)
+}
 
 function GetEmail() {
   var namebase64 = "YnJhbmRvbjY2cmIx"
@@ -57,7 +71,7 @@ document.addEventListener('mousemove', function (e) {
   cursorcustom.animate({
     left: `${PosX}px`,
     top: `${PosY}px`
-  }, { duration: 800, fill: "forwards" })
+  }, { duration: 950, fill: "forwards", easing: "ease-out", delay: "15"})
 })
 
 document.addEventListener('click', () => {

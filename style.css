@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto&family=Roboto+Condensed&family=Patrick+Hand&family=Lilita+One&display=swap');
 
-
 body {
     text-align: center;
     background-color: rgb(255, 255, 255);
@@ -161,6 +160,7 @@ footer {
     margin: 0;
     padding: 0;
 }
+
 .socalmedia {
     background-color: #f5efef;
 }
@@ -295,6 +295,7 @@ footer {
     border-style: inset;
     transition: all ease-in-out 1s;
 }
+
 /** The cursor **/
 
 .custom-cursor-dot {
@@ -303,12 +304,15 @@ footer {
     background-color: rgb(13, 10, 10);
     opacity: 0.5;
 }
+
 .custom-cursor {
     width: 30px;
     height: 30px;
     border: 4px solid rgb(255, 0, 0);
 }
-.custom-cursor-dot, .custom-cursor {
+
+.custom-cursor-dot,
+.custom-cursor {
     position: fixed;
     top: 0;
     left: 0;
@@ -323,40 +327,49 @@ footer {
         transform: scale(1);
         opacity: 0.3;
     }
+
     25% {
         transform: scale(1.25);
         opacity: 0.9;
     }
+
     50% {
         transform: scale(3);
         opacity: 0.5;
     }
+
     75% {
         transform: scale(1.25);
         opacity: 0.3;
     }
+
     100% {
         transform: scale(1);
         opacity: 0;
     }
 }
+
 @keyframes dotex {
     0% {
         transform: scale(1);
         opacity: 0.3;
     }
+
     25% {
         transform: scale(1.25);
         opacity: 0.8;
     }
+
     50% {
         transform: scale(3);
         opacity: 0.5;
     }
+
     75% {
         transform: scale(1.25);
         opacity: 0.3;
     }
+
     100% {
         transform: scale(1);
         opacity: 0;
@@ -370,17 +383,19 @@ footer {
     cursor: none;
     pointer-events: none;
 }
+
 .custom-cursor-dot-expand {
     transition: 0.5s !important;
-    animation: dotex .5s ease-in-out; 
+    animation: dotex .5s ease-in-out;
     background-color: black;
     opacity: 0.4;
     cursor: none;
     pointer-events: none;
 }
+
 .expand-hover-link {
     transition: 0.5s !important;
-    animation: dotex .1.8s ease-in-out; 
+    animation: dotex .1.8s ease-in-out;
     opacity: 1;
     background-color: grey;
     animation-iteration-count: infinite;
