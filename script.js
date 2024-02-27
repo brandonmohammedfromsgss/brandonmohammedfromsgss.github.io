@@ -22,13 +22,14 @@ function PhoneNumber() {
 
 function Instagram() {
   var ista = prompt("What is my favourite subject?").toLowerCase()
-  if (ista === "it" || ista === "infotech" || ista == "informationtechnology" || ista == "I.T") {
+  if (ista === "it" || ista === "infotech" || ista == "information technology" || ista == "I.T") {
     window.location = 'https://www.instagram.com/iiiibran/?hl=en'
   }
   else {
     alert("Wrong answer! Try again")
   }
 }
+
 
 function GetEmail() {
   var namebase64 = "YnJhbmRvbjY2cmIx"
@@ -86,3 +87,4 @@ for (let link = 0; link < alllinks.length; link++) {
     cursorcustom.classList.remove("expand-hover-link");
   })
 }
+

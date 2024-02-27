@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto&family=Roboto+Condensed&family=Patrick+Hand&family=Lilita+One&display=swap');
 
+
 body {
     text-align: center;
     background-color: rgb(255, 255, 255);
@@ -80,8 +81,9 @@ footer {
 }
 
 #typed {
+    font-size: 38px;
     display: inline-block;
-    -webkit-text-stroke: 1.5px rgb(163, 114, 15);
+    -webkit-text-stroke: 0.25px rgb(163, 114, 15);
     color: transparent;
 }
 
@@ -101,7 +103,6 @@ footer {
 .myself {
     border: 8.8px solid rgb(117, 117, 114);
     border-style: dashed;
-    margin-right: 900px;
     transition: all ease-in-out 0.3s;
 }
 
@@ -114,6 +115,11 @@ footer {
 .typed-cursor {
     color: green;
 }
+
+.darkmode--activated .brandonbig, .darkmode--activated  {
+    -webkit-text-stroke: 1px wheat;
+  }
+  
 
 #redfilled {
     color: red;
@@ -154,11 +160,14 @@ footer {
 }
 
 .moregrayer {
-    padding-top: 180px !important;
+    padding-top: 130px !important;
     z-index: -1;
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+}
+.socalmedia {
+    background-color: #f5efef;
 }
 
 .gallerybackground {
