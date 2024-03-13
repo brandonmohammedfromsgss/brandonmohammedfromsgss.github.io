@@ -19,8 +19,7 @@
         }
         nav {
             word-spacing: 40px;
-            font-size: 36px;
-            background-color: azure;
+            font-size: 30px;
         }
         @keyframes float {
          0% {transform: translateY(10%) translateX(1px);}
@@ -74,18 +73,19 @@
             transition: 0.85s;
             color: rgb(26, 167, 159);
         }
-        @media only screen and (min-device-width: 445px) {
-            ul,li {font-size: 20px;  font-weight: 500;}
-            nav {font-size: 28px;}
-            #biggest {font-size: 48px;}
-            h4 {font-size: 16px;  font-weight: 600;}
+        @media only screen and (min-width: 767px) and (max-width: 1281px) {
+            h4 {font-size: 1.5em;}
+            h3 {font-size: 2.2em;}
+            #biggest {font-size: 3.7em; }
+            nav {font-size: 2.7em;}
+            ul,li {font-size: 1.45em;}
         }
-        @media only screen and (min-width: 766px) and (max-width: 1281px) {
-            h4 {font-size: 27px;}
-            h3 {font-size: 36px;}
-            #biggest {font-size: 66px; }
-            nav {font-size: 48px;}
-            ul,li {font-size: 38px;}
+
+        @media only screen and (max-width: 550px) {
+        ul,li {font-size: 1.3em;  font-weight: 500;}
+        nav {font-size:  1.44em;}
+        #biggest {font-size: 2.95em;}
+        h4 {font-size: 1.075em;  font-weight: 600;}
         }
     </style>
     <meta charset="UTF-8">
@@ -93,10 +93,12 @@
     <title>Homepage</title>
 </head>
 <body>
+   
     <nav>
-        <a href="./index.html">Home</a>
+        <a href="/">Home</a>
         <a href="./pages/contact.html">Contact</a>
     </nav>
+
     <br><br><br><br><br>
     <h1 id="biggest">Brandon Mohammed</h1>
 
