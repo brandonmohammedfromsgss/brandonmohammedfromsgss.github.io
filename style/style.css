@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto&family=Roboto+Condensed&family=Patrick+Hand&family=Lilita+One&display=swap');
+
+body {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Lilita One', sans-serif;
+}
+
+.brandonbig {
+    /** another font to use is possibly Source Code Pro font. These here are unused fonts. **/
+    /** font-family: 'Source Code Pro', monospace; **/
+    /** font-family: 'Source Sans 3', sans-serif ; **/
+    /**font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; **/
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    /** this also looks nice **/
+    /** font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; **/
+    text-decoration: underline;
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+}
+
+.infosummary {
+    font-size: 23px;
+}
+
+.aboutme {
+    font-size: 18px;
+}
+
+::selection {
+    background-color: rgb(255, 0, 0);
+    color: hotpink;
+    z-index: 1;
+}
+
+p {
+    font-size: 21px;
+    color: rgb(100, 100, 100);
+}
+
+.imagehover {
+    transition: all ease-in-out 0.3s;
+}
+
+.imagehover:hover {
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.55) rotate(20deg) translateY(-16px);
+}
+
+a:hover {
+    transition: 1.5s;
+    color: hotpink;
+}
+
+a {
+    color: rgb(211, 179, 0);
+}
+
+footer {
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#typed {
+    font-size: 38px;
+    display: inline-block;
+    -webkit-text-stroke: 0.25px rgb(163, 114, 15);
+    color: transparent;
+}
+
+.abtme,
+.autism {
+    display: inline-block;
+    font-family: 'Anonymous Pro', monospace;
+    /** font-family: 'Roboto Condensed', sans-serif; **/
+}
+
+.socials {
+    position: absolute;
+    right: 150px;
+    font-size: 24px;
+}
+
+.myself {
+    border: 8.8px solid rgb(117, 117, 114);
+    border-style: dashed;
+    transition: all ease-in-out 0.3s;
+}
+
+.myself:hover {
+    transition: all ease-in-out 0.45s;
+    transform: scale(2.34) rotate(20deg) translateY(-16px);
+    opacity: 0.84;
+}
+
+.typed-cursor {
+    color: green;
+}
+
+#redfilled {
+    color: red;
+    -webkit-text-stroke: 1.5px;
+    text-decoration: underline;
+}
+
+/** The scrollbar **/
+::-webkit-scrollbar {
+    width: 9.5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(54, 53, 53);
+    border-radius: 5px;
+}
+
+/** changes the color of the track background used for the track **/
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(44, 41, 41);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(168, 164, 164);
+}
+
+.abovethefold {
+    background-color: #fdf7f7;
+    /** f8efef **/
+    margin: 0;
+    padding: 0;
+}
+
+.grey {
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+}
+
+.moregrayer {
+    padding-top: 130px !important;
+    z-index: -1;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.socalmedia {
+    background-color: #f5efef;
+}
+
+.gallerybackground {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+.blur {
+    filter: blur(3px) saturate(80%);
+    transition: all ease-in-out 60s;
+}
+
+.blur:hover {
+    filter: blur(0) saturate(150%);
+    transition: all ease-in-out 0.8s;
+}
+
+.gallcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallcontainer>div {
+    text-wrap: balance;
+    width: 150px;
+    margin: 18px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.maths {
+    background-color: rgb(255, 0, 0);
+    padding: 60px;
+    border: 8.8px solid rgb(185, 28, 28);
+    border-style: inset;
+    transition: all ease-in-out 1s;
+}
+
+.eng {
+    background-color: yellow;
+    padding: 60px;
+    border: 8.8px solid rgb(240, 240, 13);
+    border-style: inset;
+    transition: all ease-in-out 1s;
+}
+
+.geo {
+    background-color: yellowgreen;
+    padding: 60px;
+    border: 8.8px solid rgb(122, 173, 20);
+    border-style: inset;
+    transition: all ease-in-out 1s;
+}
+
+.info {
+    padding: 60px;
+    background-color: rgb(77, 77, 218);
+    border: 8.8px solid rgb(122, 122, 247);
+    border-style: inset;
+    transition: all ease-in-out 1s;
+}
+
+.IS {
+    padding: 60px;
+    background-color: rgb(21, 187, 21);
+    border: 8.8px solid rgb(3, 48, 4);
+    border-style: inset;
+    transition: all ease-in-out 1s;
+}
+
+.ss {
+    padding: 60px;
+    background-color: orangered;
+    border: 8.8px solid rgb(255, 91, 32);
+    border-style: inset;
+    transition: all ease-in-out 1s;
+}
+
+.pob {
+    padding: 60px;
+    background-color: rgb(235, 103, 235);
+    border: 8.8px solid rgb(207, 74, 207);
+    border-style: inset;
+    transition: all ease-in-out 1s;
+}
+
+/** my subject choices when hovered **/
+
+.maths:hover {
+    padding: 60px;
+    background-color: rgb(235, 36, 36);
+    transition: all ease-in-out 1s;
+}
+
+.eng:hover {
+    padding: 60px;
+    background-color: rgb(189, 189, 9);
+    transition: all ease-in-out 1s;
+}
+
+.geo:hover {
+    padding: 60px;
+    background-color: rgb(107, 156, 16);
+    transition: all ease-in-out 1s;
+}
+
+.info:hover {
+    padding: 60px;
+    background-color: rgb(50, 50, 173);
+    transition: all ease-in-out 1s;
+}
+
+.IS:hover {
+    padding: 60px;
+    background-color: rgb(11, 148, 11);
+    transition: all ease-in-out 1s;
+}
+
+.ss:hover {
+    padding: 60px;
+    background-color: rgb(167, 46, 2);
+    transition: all ease-in-out 1s;
+}
+
+.pob:hover {
+    padding: 60px;
+    background-color: rgb(168, 53, 168);
+    border: 8.8px solid rgb(184, 51, 184);
+    border-style: inset;
+    transition: all ease-in-out 1s;
+}
+
+/** The cursor **/
+
+.custom-cursor-dot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(13, 10, 10);
+    opacity: 0.5;
+}
+
+.custom-cursor {
+    width: 30px;
+    height: 30px;
+    border: 4px solid rgb(255, 0, 0);
+}
+
+.custom-cursor-dot,
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 999999;
+    pointer-events: none;
+}
+
+@keyframes expandoutline {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+
+    25% {
+        transform: scale(1.25);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: scale(3);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: scale(1.25);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes dotex {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+
+    25% {
+        transform: scale(1.25);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(3);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: scale(1.25);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.cursor-expand {
+    transition: 0.3s !important;
+    animation: expandoutline .5s ease-in-out;
+    border: 1px solid red;
+    cursor: none;
+    pointer-events: none;
+}
+
+.custom-cursor-dot-expand {
+    transition: 0.5s !important;
+    animation: dotex .5s ease-in-out;
+    background-color: black;
+    opacity: 0.4;
+    cursor: none;
+    pointer-events: none;
+}
+
+.expand-hover-link {
+    transition: 0.5s !important;
+    animation: dotex .1.8s ease-in-out;
+    opacity: 1;
+    background-color: grey;
+    animation-iteration-count: infinite;
+    cursor: none;
+    pointer-events: none;
+    outline: 4px solid rgb(214, 59, 59);
+}

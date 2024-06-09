@@ -2,400 +2,238 @@
 <html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style type="text/css">
-        @font-face {
-            font-family: 'Action Jackson';
-            src: url('./ActionJackson.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-            font-display: optional;
-        }
-
-        @font-face {
-            font-family: 'Sendcat';
-            src: url('./Sendcat.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-            font-display: optional;
-        }
-
-        /* latin-ext */
-        @font-face {
-            font-family: 'Patrick Hand';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/patrickhand/v23/LDI1apSQOAYtSuYWp8ZhfYe8UMLLq7s.woff2) format('woff2');
-            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-
-        /* latin */
-        @font-face {
-            font-family: 'Patrick Hand';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/patrickhand/v23/LDI1apSQOAYtSuYWp8ZhfYe8XsLL.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-
-        /* latin-ext */
-        @font-face {
-            font-family: 'Shantell Sans';
-            font-style: italic;
-            font-weight: 300 800;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/shantellsans/v9/FeVhS0pCoLIo-lcdY7kjvNoQg2xkycTqsuA6bi9pTt8YiT-NXidjb_ee-maigL6R8nKVh8BbE1mv4wwMMW1lebY.woff2) format('woff2');
-            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-
-        /* latin */
-        @font-face {
-            font-family: 'Shantell Sans';
-            font-style: italic;
-            font-weight: 300 800;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/shantellsans/v9/FeVhS0pCoLIo-lcdY7kjvNoQg2xkycTqsuA6bi9pTt8YiT-NXidjb_ee-maigL6R8nKVh8BbE1mv4wwMP21l.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-
-        /* latin-ext */
-        @font-face {
-            font-family: 'Shantell Sans';
-            font-style: normal;
-            font-weight: 300 800;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/shantellsans/v9/FeVvS0pCoLIo-lcdY7kjvNoQqWVWB0qWpl29ajppTuUTu_kJKmHesPOL-maYi4xZeHCNQ09eBlmv8wU8PXVh.woff2) format('woff2');
-            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-        }
-
-        /* latin */
-        @font-face {
-            font-family: 'Shantell Sans';
-            font-style: normal;
-            font-weight: 300 800;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/shantellsans/v9/FeVvS0pCoLIo-lcdY7kjvNoQqWVWB0qWpl29ajppTuUTu_kJKmHesPOL-maYi4xZeHCNQ09eBlmv8ws8PQ.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-
-
-        nav {
-            word-spacing: 40px;
-            font-size: 30px;
-        }
-
-        a:link {
-            text-decoration: none;
-            text-decoration-line: overline;
-        }
-
-        a:hover {
-            text-decoration-line: underline;
-            text-decoration-style: wavy;
-            text-decoration-thickness: 1.95px;
-            transition: 0.85s;
-            color: rgb(26, 167, 159);
-        }
-
-        #current {
-            text-decoration: underline;
-            text-decoration-thickness: 3.95px;
-            color: rgb(11, 92, 92);
-        }
-
-        #biggest {
-            font-size: 54px;
-            animation-name: float;
-            animation-duration: 1.5s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-            animation-fill-mode: forwards;
-            animation-delay: 1.25s;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(23%) translateX(0.100%);
-            }
-
-            5% {
-                transform: translateY(20%) translateX(0.200%);
-            }
-
-            10% {
-                transform: translateY(17%) translateX(0.300%);
-            }
-
-            20% {
-                transform: translateY(14%) translateX(0.400%);
-            }
-
-            30% {
-                transform: translateY(11%)translateX(0.500%);
-            }
-
-            40% {
-                transform: translateY(8%) translateX(0.500%);
-            }
-
-            45% {
-                transform: translateY(5%) translateX(0.400%);
-            }
-
-            50% {
-                transform: translateY(-2%) translateX(0.300%);
-            }
-
-            55% {
-                transform: translateY(-5%) translateX(0.200%);
-            }
-
-            60% {
-                transform: translateY(-8%) translateX(0.100%);
-            }
-
-            70% {
-                transform: translateY(-11%) translateX(-0.100%);
-            }
-
-            80% {
-                transform: translateY(-14%) translateX(-0.200%);
-            }
-
-            90% {
-                transform: translateY(-18%) translateX(-0.300%);
-            }
-
-            95% {
-                transform: translateY(-21%) translateX(-0.400%);
-            }
-
-            100% {
-                transform: translateY(-23%) translateX(-0.500%);
-            }
-        }
-
-        @keyframes fade-in {
-            0% {
-                opacity: 0;
-            }
-
-            25% {
-                opacity: 0.2;
-            }
-
-            50% {
-                opacity: 0.5;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes slide-in-left-animation {
-            0% {
-                transform: translateX(-100%);
-            }
-
-            25% {
-                transform: translateX(-75%);
-            }
-
-            50% {
-                transform: translateX(-50%);
-            }
-
-            75% {
-                transform: translateX(-25%);
-            }
-
-            100% {
-                transform: translateX(0%);
-            }
-        }
-
-        @keyframes scale-up {
-            0% {
-                transform: scale(1);
-                color: rgb(219, 204, 219);
-            }
-
-            25% {
-                transform: scale(1.15);
-                color: rgb(243, 196, 243);
-            }
-
-            35% {
-                transform: scale(1.35);
-                color: rgb(245, 188, 245);
-            }
-
-            50% {
-                transform: scale(1.40);
-                color: rgb(245, 160, 245);
-            }
-
-            65% {
-                transform: scale(1.25);
-                color: rgb(248, 140, 248);
-            }
-
-            75% {
-                transform: scale(1.15);
-                color: rgb(238, 120, 238);
-            }
-
-            100% {
-                transform: scale(1);
-                color: rgb(201, 90, 201);
-            }
-        }
-
-
-        .slide-in-left-ani {
-            animation-name: slide-in-left-animation;
-            animation-duration: 2s;
-            animation-timing-function: linear;
-            animation-delay: 550ms;
-        }
-
-        .fade-in-ani {
-            animation-name: fade-in;
-            animation-duration: 4.5s;
-            animation-timing-function: linear;
-            animation-delay: 200ms;
-        }
-
-        .scale-up-ani {
-            animation-name: scale-up;
-            animation-duration: 1300ms;
-            animation-timing-function: linear;
-            animation-delay: 200ms;
-        }
-
-        /**
-         12, 10.50, 9,6,3,1,0.5 
-
--21 -18 -14 -11 -8 -5 -2 2(50%)
-        }
-        **/
-        h1 {
-            text-shadow: 2px 4px 8px #000000;
-            font-family: 'Action Jackson';
-            font-weight: 400;
-        }
-
-        h3 {
-            color: rgb(230, 148, 230);
-            font-family: "Sendcat";
-        }
-
-        body {
-            font-family: "Shantell Sans", cursive;
-            font-size: 18px;
-            text-wrap: balance;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        li,
-        ul {
-            list-style: none;
-            font-family: "Patrick Hand", cursive;
-            font-weight: 400;
-            font-size: 26px;
-        }
-
-        @media only screen and (min-width: 767px) and (max-width: 1281px) {
-            h4 {
-                font-size: 1.5em;
-            }
-
-            h3 {
-                font-size: 2.2em;
-            }
-
-            #biggest {
-                font-size: 3.7em;
-            }
-
-            nav {
-                font-size: 2.7em;
-            }
-
-            ul,
-            li {
-                font-size: 1.45em;
-            }
-        }
-
-        @media only screen and (max-width: 550px) {
-
-            ul,
-            li {
-                font-size: 1.3em;
-                font-weight: 500;
-            }
-
-            nav {
-                font-size: 1.44em;
-            }
-
-            #biggest {
-                font-size: 2.95em;
-            }
-
-            h4 {
-                font-size: 1.075em;
-                font-weight: 600;
-            }
-        }
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Personal | Brandon </title>
+  <link rel="stylesheet" href="../style/style.css">
+  <!-- Javascript and css libaries for head, used to improve website look  -->
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandon Mohammed | I.T | SGSS</title>
 </head>
 
 <body>
 
-    <nav>
-        <a id="current" href="/">Home</a>
-        <a href="./pages/contact.html">Contact</a>
-    </nav>
-
-    <br><br><br><br><br>
-    <h1 id="biggest">Brandon Mohammed</h1>
+  <div class="custom-cursor" data-custom-cursor></div>
+  <div class="custom-cursor-dot" data-custom-cursor-dot></div>
 
 
-    <h3 class="fade-in scale-up-ani">Hi there,</h3>
-    <section class="fade-in-ani">
-
-        <h4>Names Brandon Mohammed. I am a 15 year old Sangre Grande Sec Student.
-            My favourite intrestest is just anything computer related like programing,
-            website design,hacking etc. I hope to become a web developer one day :)
-        </h4>
-    </section>
 
 
-    <div class="slide-in-left-ani">
-        <ul>
-            <li>Gender: Boy</li>
-            <li>Fun Fact: I have Astism</li>
-        </ul>
+
+
+  <!-- Javascript libaries for body-->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <section class="abovethefold">
+    <div data-aos="flip-up" data-aos-easing="ease-in-out" data-aos-duration="9000" data-aos-delay="300">
+      <!-- Start of animation div-->
+      <!-- Start of brandonbig div-->
+      <a href="../pictures/apicofmyself.jpg"> <img class="myself" src="../pictures//myselfglitchedv1.jpg" alt="" width="220"> </a>
+      <br><br><br><br><br><br>
+      <div class="brandonbig">
+        <h1><b>Brandon Mohammed!</b></h1>
+      </div>
+      <br><br>
+      <span id="typed"></span> <br>
+      <br><br>
+    </div> <!-- End of animation div-->
+
+    
+
+    <div data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-duration="9000" data-aos-delay="1200">
+      <div class="socalmedia">
+        <h2>Socials and contacts</h2>
+        <a onclick="Instagram()"> <img class="imagehover insta" src="../pictures/socials/instaglogo.webp" alt=""
+            width="40"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="EmailQuestion()"><img
+            class="imagehover email" src="../pictures/socials/email.png" alt="" width="40"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+          onclick="PhoneNumber()"> <img class="imagehover whatsapp" src="../pictures/socials/telegram.png" alt="" width="40"> </a>
+      </div>
     </div>
 
-    <h3>Me</h3>
-    <br><br><br><br><br><br><br><br><br>
-    <img loading="eager" src="./glitchme_100_85_com.webp" alt="" width="400" fetchpirioty>
+    </div>
+  </section>
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <section class="grey"> <!-- Start of grey section-->
+
+    <div class="infosummary">
+    </div>
+    <div class="aboutme"> <!-- Start of aboutme section-->
+      <p>
+        <b>
+          <div class="abtme"></div>
+          <br><br>
+          <br><br>
+          <div class="authad"></div>
+          <br><br>
+
+          <div class="autism"></div>
+      </p>
+    </div> <!-- End of about me section-->
+
+    <br><br>
+    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="4500" data-aos-delay="700" data-aos-delay="600">
+      <!-- Start of animation div-->
+    </div> <!-- End of animation div-->
+  </section> <!-- End of grey section-->
+
+  <section class="moregrayer"> <!-- Start of moregrayer section-->
+    <div data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="6500" data-aos-delay="700">
+      <!-- Start of animation div-->
+      <h2>My subject choices</h2>
+
+      <div class="gallcontainer"> <!--Start of gallcontainer-->
+        <div class="maths">Maths </div>
+        <div class="eng">English </div>
+        <div class="geo">Geography </div>
+        <div class="info"> I.T </div>
+        <div class="IS">Int. Sci </div>
+        <div class="ss">Social Studies </div>
+        <div class="pob">P.O.B</div>
+      </div> <!--End of gallcontainer-->
+    </div> <!-- End of animation div-->
+  </section> <!-- End of moregrayer section-->
+
+  <div data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="6500" data-aos-delay="700">
+    <!-- Start of animation div-->
+    <section class="gallerybackground"> <!-- Start of gallerybackground section-->
+      <br><br><br><br><br><br>
+      <h2>Gallery</h2>
+      <a class="link" href="javascript:void()"> <img onmouseover="Mag(this)" onmouseout="unMag(this)"
+          onclick="window.open(this.src)" imageslist class="blur space hovered" src="../pictures/gallery/instapfp.webp" alt=""
+          width="400" height="400"> </a>
+      <a class="link" href="javascript:void()"> <img onclick="window.open(this.src)" imageslist
+          class="blur space hovered" src="../pictures/gallery/lyedown.webp" alt="" width="400" height="400"> </a>
+      <a class="link" href="javascript:void()"> <img onclick="window.open(this.src)" imageslist
+          class="blur space hovered" src="../pictures/gallery/resortchair.webp" alt="" width="400" height="400"> </a>
+      <a class="link" href="javascript:void()"> <img onclick="window.open(this.src)" imageslist
+          class="blur space hovered" src="../pictures/gallery/sade.webp" alt="" width="400" height="400"> </a>
+      <a class="link" href="javascript:void()"> <img onclick="window.open(this.src)" imageslist
+          class="blur space hovered" src="../pictures/gallery/sittingdown.webp" alt="" width="400" height="400"> </a>
+      <a class="link" href="javascript:void()"> <img onclick="window.open(this.src)" imageslist
+          class="blur space hovered" src="../pictures/gallery/youngerme.webp" alt="" width="400" height="400"> </a>
+  </div> <!-- End of animation div-->
+  </section> <!-- End of gallerybackground section-->
 
 
 
-
+  <br><br><br><br><br><br><br><br><br>
+  <footer class="footerbottom">
+    <h2>Copyright</h2>
+    ©️ 2024 Brandon Mohammed.All rights reserved <br>
+    website design inspired by <a href="https://xge.dev/">xge.dev</a> <br>
+    <a href="https://atomiks.github.io/tippyjs/">Tippy</a>, <a href="https://michalsnik.github.io/aos/">AOS </a>, <a
+      href="https://github.com/mattboldt/typed.js">typed.js</a> and <a href="https://lenis.studiofreight.com/">lenis</a>
+    were used to make this website possible.
+    <br><br><br><br>
+  </footer>
 </body>
+<script defer src="script.js"></script>
+<script>
+  AOS.init();
+
+  // typing animation
+  var typed = new Typed('#typed', {
+    // ,Form 4 SanSec student,Intrested in IT,A pro dumbass
+    smartBackspace: true,
+    strings: ['<h3>15-year-old</h3>', '<h3>Form 4 <span id="redfilled">Sangre Grande Sec </span>  Student </h3>', '<h3>Doing <span id="redfilled"> I.T </span>  </h3>', '<h3> He <span id="redfilled"> Loves I.T </span> </h3>', '<h3><s>A professional dumbass</s> </h3>'],
+    loop: true,
+    typeSpeed: 40,
+    backSpeed: 20,
+    //startDelay: 40,
+    smartBackspace: true
+
+  });
+
+  // the other typing animation
+  var typed = new Typed('.abtme', {
+    strings: ["<h3> Hello there, I am a 15-year-old <a href='https://sangregrandesec.org/''>Sangre Grande Sec</a>. student named Brandon Josh Mohammed. <br> I am currently living in Trinidad and Tobago. My birthday is Aug 26. I am a Form 4 Sangre Grande Sec. student. <br> who currently doing I.T in form 4. I've always found I.T so fun and intresting, so that is why. <br> I am doing it for form 4 and 5.I am planning on becoming a developer.</b> <br>   </h3>"],
+    typeSpeed: 28,
+    backSpeed: 10,
+    backDelay: 5000,
+    loop: false
+  });
+
+  var typed = new Typed('.authad', {
+    strings: ["<h2>Autism </h2>"],
+    typeSpeed: 40,
+    backSpeed: 10,
+    backDelay: 5000,
+    loop: false
+  });
+
+  var typed = new Typed('.autism', {
+    strings: ["<h3>I also have Autism. I've had autism ever since I was 8, I had gotten tested and the tests found that I have autism. I may be slow to pick up on social ques, be slow at learning some stuff or come off as annoying sometimes, but it's not really that bad as on the spectrum I am diganosed as 'mild' </h3>"],
+    typeSpeed: 40,
+    backSpeed: 10,
+    backDelay: 5000,
+    loop: false
+  });
+
+  // tooltip for instagram
+  tippy('.insta', {
+    content: "@ggbrany",
+    delay: 400,
+    followCursor: true,
+    animation: 'perspective-extreme',
+    allowHTML: true,
+
+  });
+
+  //tooltip for email
+  tippy('.email', {
+    content: "darknessofthe.bm.sg3@gmail.com",
+    delay: 400,
+    followCursor: true,
+    animation: 'perspective-extreme',
+    allowHTML: true,
+
+  });
+  // tooltip for whatsapp
+  tippy('.whatsapp', {
+    content: "@BarrM",
+    delay: 400,
+    followCursor: true,
+    animation: 'perspective-extreme',
+    allowHTML: true,
+
+  });
+
+  tippy('.myself', {
+    content: "<b>A picture of me at Mayaro beach, enjoying myself</b>",
+    delay: 150,
+    followCursor: true,
+    animation: 'scale-subtle',
+    allowHTML: true,
+
+  });
+
+
+  // This make scrolling sommother
+  const lenis = new Lenis({
+    duration: 0.1
+  })
+
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  requestAnimationFrame(raf)
+
+  // checks if we are on mobile or tablet and goes to the mobile.html page
+  const IsPortableDevive = /iPhone|iPad|iPod|Android|Kindle/i.test(navigator.userAgent);
+  if (IsPortableDevive) {
+    window.location = 'mobile.html';
+  }
+
+
+
+</script>
 
 </html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto:wght@300;400&family=Roboto+Condensed&family=Lilita+One&display=swap');
+
+body {
+    text-align: center;
+    text-wrap: balance;
+    background-color: rgb(240, 235, 235);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    background-blend-mode: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.abovethefold {
+    background-color: #f8efef;
+    /** f8efef **/
+    margin: 0;
+    padding: 0;
+}
+
+.grey {
+    padding-top: 130px !important;
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+}
+
+.moregrayer {
+    padding-top: 80px !important;
+    z-index: -1;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+#aboutmebg {
+    background-color: #f1eaea;
+}
+
+.socalmedia {
+    background-color: #f1eaea;
+}
+
+.gallerybackground {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+h3 {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 16px;
+}
+
+.thin {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Lilita One', sans-serif;
+}
+
+.bbig {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(116, 111, 111);
+    color: transparent;
+}
+
+#redfilled {
+    color: red;
+    -webkit-text-stroke: 1.5px;
+    text-decoration: underline;
+}
+
+::selection {
+    background-color: rgb(255, 0, 0);
+    color: hotpink;
+    z-index: 1;
+}
+
+#typed,
+#abtme {
+    display: inline-block;
+}
+
+.typedtext {
+    font-size: 26px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+li {
+    font-size: 18px;
+}
+
+/** for Tablets **/
+@media only screen and (min-width: 768px) {
+    h3 {
+        font-size: 29px;
+    }
+
+    .bbig {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .typedtext {
+        font-size: 30px;
+    }
+
+    body {
+        line-height: 1.6;
+    }
+
+    li {
+        font-size: 25px;
+    }
+}
