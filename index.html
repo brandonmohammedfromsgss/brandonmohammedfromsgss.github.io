@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Action Jackson';
+            src: url('./ActionJackson.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: optional;
+        }
+
+        @font-face {
+            font-family: 'Sendcat';
+            src: url('./Sendcat.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: optional;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Patrick Hand';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/patrickhand/v23/LDI1apSQOAYtSuYWp8ZhfYe8UMLLq7s.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Patrick Hand';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/patrickhand/v23/LDI1apSQOAYtSuYWp8ZhfYe8XsLL.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Shantell Sans';
+            font-style: italic;
+            font-weight: 300 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/shantellsans/v9/FeVhS0pCoLIo-lcdY7kjvNoQg2xkycTqsuA6bi9pTt8YiT-NXidjb_ee-maigL6R8nKVh8BbE1mv4wwMMW1lebY.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Shantell Sans';
+            font-style: italic;
+            font-weight: 300 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/shantellsans/v9/FeVhS0pCoLIo-lcdY7kjvNoQg2xkycTqsuA6bi9pTt8YiT-NXidjb_ee-maigL6R8nKVh8BbE1mv4wwMP21l.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Shantell Sans';
+            font-style: normal;
+            font-weight: 300 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/shantellsans/v9/FeVvS0pCoLIo-lcdY7kjvNoQqWVWB0qWpl29ajppTuUTu_kJKmHesPOL-maYi4xZeHCNQ09eBlmv8wU8PXVh.woff2) format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Shantell Sans';
+            font-style: normal;
+            font-weight: 300 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/shantellsans/v9/FeVvS0pCoLIo-lcdY7kjvNoQqWVWB0qWpl29ajppTuUTu_kJKmHesPOL-maYi4xZeHCNQ09eBlmv8ws8PQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+
+        nav {
+            word-spacing: 40px;
+            font-size: 30px;
+        }
+
+        a:link {
+            text-decoration: none;
+            text-decoration-line: overline;
+        }
+
+        a:hover {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 1.95px;
+            transition: 0.85s;
+            color: rgb(26, 167, 159);
+        }
+
+        #current {
+            text-decoration: underline;
+            text-decoration-thickness: 3.95px;
+            color: rgb(11, 92, 92);
+        }
+
+        #biggest {
+            font-size: 54px;
+            animation-name: float;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-delay: 1.25s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(23%) translateX(0.100%);
+            }
+
+            5% {
+                transform: translateY(20%) translateX(0.200%);
+            }
+
+            10% {
+                transform: translateY(17%) translateX(0.300%);
+            }
+
+            20% {
+                transform: translateY(14%) translateX(0.400%);
+            }
+
+            30% {
+                transform: translateY(11%)translateX(0.500%);
+            }
+
+            40% {
+                transform: translateY(8%) translateX(0.500%);
+            }
+
+            45% {
+                transform: translateY(5%) translateX(0.400%);
+            }
+
+            50% {
+                transform: translateY(-2%) translateX(0.300%);
+            }
+
+            55% {
+                transform: translateY(-5%) translateX(0.200%);
+            }
+
+            60% {
+                transform: translateY(-8%) translateX(0.100%);
+            }
+
+            70% {
+                transform: translateY(-11%) translateX(-0.100%);
+            }
+
+            80% {
+                transform: translateY(-14%) translateX(-0.200%);
+            }
+
+            90% {
+                transform: translateY(-18%) translateX(-0.300%);
+            }
+
+            95% {
+                transform: translateY(-21%) translateX(-0.400%);
+            }
+
+            100% {
+                transform: translateY(-23%) translateX(-0.500%);
+            }
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0.2;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-in-left-animation {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            25% {
+                transform: translateX(-75%);
+            }
+
+            50% {
+                transform: translateX(-50%);
+            }
+
+            75% {
+                transform: translateX(-25%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        @keyframes scale-up {
+            0% {
+                transform: scale(1);
+                color: rgb(219, 204, 219);
+            }
+
+            25% {
+                transform: scale(1.15);
+                color: rgb(243, 196, 243);
+            }
+
+            35% {
+                transform: scale(1.35);
+                color: rgb(245, 188, 245);
+            }
+
+            50% {
+                transform: scale(1.40);
+                color: rgb(245, 160, 245);
+            }
+
+            65% {
+                transform: scale(1.25);
+                color: rgb(248, 140, 248);
+            }
+
+            75% {
+                transform: scale(1.15);
+                color: rgb(238, 120, 238);
+            }
+
+            100% {
+                transform: scale(1);
+                color: rgb(201, 90, 201);
+            }
+        }
+
+
+        .slide-in-left-ani {
+            animation-name: slide-in-left-animation;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 550ms;
+        }
+
+        .fade-in-ani {
+            animation-name: fade-in;
+            animation-duration: 4.5s;
+            animation-timing-function: linear;
+            animation-delay: 200ms;
+        }
+
+        .scale-up-ani {
+            animation-name: scale-up;
+            animation-duration: 1300ms;
+            animation-timing-function: linear;
+            animation-delay: 200ms;
+        }
+
+        /**
+         12, 10.50, 9,6,3,1,0.5 
+
+-21 -18 -14 -11 -8 -5 -2 2(50%)
+        }
+        **/
+        h1 {
+            text-shadow: 2px 4px 8px #000000;
+            font-family: 'Action Jackson';
+            font-weight: 400;
+        }
+
+        h3 {
+            color: rgb(230, 148, 230);
+            font-family: "Sendcat";
+        }
+
+        body {
+            font-family: "Shantell Sans", cursive;
+            font-size: 18px;
+            text-wrap: balance;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        li,
+        ul {
+            list-style: none;
+            font-family: "Patrick Hand", cursive;
+            font-weight: 400;
+            font-size: 26px;
+        }
+
+        @media only screen and (min-width: 767px) and (max-width: 1281px) {
+            h4 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 2.2em;
+            }
+
+            #biggest {
+                font-size: 3.7em;
+            }
+
+            nav {
+                font-size: 2.7em;
+            }
+
+            ul,
+            li {
+                font-size: 1.45em;
+            }
+        }
+
+        @media only screen and (max-width: 550px) {
+
+            ul,
+            li {
+                font-size: 1.3em;
+                font-weight: 500;
+            }
+
+            nav {
+                font-size: 1.44em;
+            }
+
+            #biggest {
+                font-size: 2.95em;
+            }
+
+            h4 {
+                font-size: 1.075em;
+                font-weight: 600;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Personal | Brandon </title>
+</head>
+
+<body>
+
+    <nav>
+        <a id="current" href="/">Home</a>
+        <a href="./pages/contact.html">Contact</a>
+    </nav>
+
+    <br><br><br><br><br>
+    <h1 id="biggest">Brandon Mohammed</h1>
+
+
+    <h3 class="fade-in scale-up-ani">Hi there,</h3>
+    <section class="fade-in-ani">
+
+        <h4>Names Brandon Mohammed. I am a 15 year old Sangre Grande Sec Student.
+            My favourite intrestest is just anything computer related like programing,
+            website design,hacking etc. I hope to become a web developer one day :)
+        </h4>
+    </section>
+
+
+    <div class="slide-in-left-ani">
+        <ul>
+            <li>Gender: Boy</li>
+            <li>Fun Fact: I have Astism</li>
+        </ul>
+    </div>
+
+    <h3>Me</h3>
+    <br><br><br><br><br><br><br><br><br>
+    <img loading="eager" src="./glitchme_100_85_com.webp" alt="" width="400" fetchpirioty>
+
+
+
+
+</body>
+
+</html>
